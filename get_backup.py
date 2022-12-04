@@ -101,3 +101,139 @@ if __name__ == "__main__":
         exit(1)
 
     print(f"Backup: {backup.keys()}")
+    # 2: name
+    # 3: timestamp
+    # 4: Settings
+    # 5: Tutorial
+    # 6: Stats
+    # 7: Game
+    #   1: progress
+    #   2: golden eggs earned
+    #   3: golden eggs spent
+    #   5: 0?
+    #   6: very large number
+    #   7: piggybank
+    #   8: 1?
+    #   9: EpicResearch[]
+    #   10: timestamp?
+    #   11: News[]
+    #   12: timestamp?
+    #   13: 64?
+    #   14: timestamp?
+    #   15: Achievement[]
+    #   16: 0?
+    #   18: ?[]
+    #   19: trophy[]?
+    #   20: ?
+    #   22: 0?
+    #   23: 1?
+    #   24: 0?
+    #   25: 1?
+    #   26: ?
+    #   27: ?
+    #   28: daily gift progress
+    #   29: 0?
+    #   30: Boost[]
+    #   31: 1?
+    #   32: 0?
+    #   33: 0?
+    #   34: big number?
+    #   35: 0?
+    #   36: 0?
+    #   37: 0?
+    #   38: 27?
+    #   39: 0?
+    #   40: 0?
+    # 9: ?
+    #   3: ?[]
+    # 10: ?
+    #   1: 1?
+    #   2: 1?
+    #   3: big number?
+    #   4: big number?
+    #   5: meh number?
+    #   6: 1?
+    #   7: 1?
+    #   8: meh number?
+    #   9: meh number?
+    #   11: 1?
+    #   12: 1?
+    #   13: 1?
+    #   14: 1?
+    #   15: 1?
+    #   16: 1?
+    #   17: 1?
+    #   18: 1?
+    #   19: 0?
+    #   20: 0?
+    # 12: Farm[]
+    #   1: egg type
+    #   2: cash earned
+    #   3: cash spent
+    #   4: 0?
+    #   5: timestamp?
+    #   6: chickens
+    #   7: 0?
+    #   8: 0?
+    #   9: eggs laid
+    #   10: eggs.... eeeh, something
+    #   11: silos
+    #   12: habitat[]
+    #   13: habitat ?[]
+    #   14: habitat 0[]?
+    #   15: habitat pop[]?
+    #   16: ?
+    #   17: vehicle[]
+    #   18: Research[]
+    #   19: 2?
+    #   20: name?
+    #   21: 1[5]?
+    #   22: Boost[]
+    #   23: 0?
+    #   24: 0?
+    #   25: 0?
+    #   26: 0?
+    #   27: 0?
+    #   28: 0?
+    #   29: timestamp?
+    #   30: eggs shipped
+    #   31: 0?
+    # 13: Contracts
+    #   1: Contract[] << active
+    #   2: Contract[] << old
+    #   3: name[]
+    #   4: CurrentContractStatus
+    # 14: Rocket platform?
+    #   6: timestamp?
+    #   7: 1?
+    #   9: 4?
+    #   10: big number?
+    #   11: 1?
+    #   12: 1?
+    #   14: 0?
+    #   15: 1?
+    #   16: fuel level[]
+    #   17: meh number?
+    # 15: ?
+    #   1: ?[]
+    #   2: 30?
+    #   4: ?[]
+    #   5: ?[]
+    #   11: ?[]
+    #   12: ?[]
+    # 16: Game id
+    # 17: Device id
+    # 18: User id
+    # 20: 0?
+    # 21: 44?
+    # 22: 0?
+    # 23: seasonal event string[]?
+    # 24: ?
+    #   3: ?[]
+    #   6: seasonal store string[]?
+    #   7: empty string?
+    # 25: ?
+    #   1: 1?
+    #   2: 1?
+    #   3: [0,0,0]?
+    # 100: probably a checksum
