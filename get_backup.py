@@ -199,10 +199,101 @@ if __name__ == "__main__":
     #   30: eggs shipped
     #   31: 0?
     # 13: Contracts
+    contracts = deserialize_protobuf(backup["13"])
     #   1: Contract[] << active
+    active_contracts = [ deserialize_protobuf(contract) for contract in contracts["1"] ]
+    print(f"Active contracts: {len(active_contracts)}")
+    #for contract in active_contracts:
+    #    print(f"{contract}")
+    #     1: ?
+    #       1: contract id
+    #       2: egg type
+    #       3: Goal[]
+    #       4: 1?
+    #       5: max players
+    #       6: timestamp?
+    #       7: meh number
+    #       9: proper name
+    #       10: description
+    #       11: 0?
+    #       12: 0?
+    #       13: 0?
+    #       14: 44? << same as top layer value, maybe some version check?
+    #       15: ?
+    #       16: Goal[] again?
+    #       17: timestamp?
+    #       18: ?
+    #       19: 1?
+    #     2: coop code
+    #     3: timestamp?
+    #     5: timestamp?
+    #     6: timestamp?
+    #     7: 1?
+    #     9: timestamp?
+    #     10: 0?
+    #     11: timestamp?
+    #     13: user id
+    #     14: goals completed
+    #     15: 0?
+    #     17: 1?
     #   2: Contract[] << old
     #   3: name[]
-    #   4: CurrentContractStatus
+    #   4: CurrentContractStatus[]
+    #     1: contract id
+    #     2: progress
+    #     3: coop code
+    #     4: Contributor[]
+    #       1: base64 encoded something
+    #       2: user name
+    #       3: contribution double
+    #       4: 1?
+    #       5: 2?
+    #       6: contribution rate
+    #       7: 0?
+    #       11: soul power
+    #       12: boost tokens
+    #       14: boost tokens spent
+    #       15: ?
+    #         1: chickens
+    #         2: capacity
+    #         3: ?
+    #         4: ?
+    #         5: ?
+    #         6: ?
+    #       16: 0?
+    #       17: 0?
+    #       18: FarmInfo?
+    #         1: soul eggs
+    #         2: prophecy eggs
+    #         3: 1?
+    #         4: 1?
+    #         5: trophy[]
+    #         6: EpicResearch[]
+    #         7: egg type
+    #         8: cash
+    #         9: habitat[]
+    #         10: habitat pop[]
+    #         11: vehicle[]
+    #         12: train length[]
+    #         13: silos
+    #         14: Research[]
+    #         15: Boost[]
+    #         16: boost tokens
+    #         17: Artifact[]
+    #         18: ?
+    #         19: FarmAppearance[]
+    #         20: version again
+    #         21: habitat capacity[]
+    #         22: timestamp?
+    #       19: contract id
+    #       20: timestamp?
+    #     5: timestamp?
+    #     6: 0?
+    #     7: timestamp?
+    #     8: 0?
+    #     9: user id creator
+    #     10: 0?
+    #     12: timestamp?
     # 14: Rocket platform?
     #   6: timestamp?
     #   7: 1?
@@ -225,7 +316,7 @@ if __name__ == "__main__":
     # 17: Device id
     # 18: User id
     # 20: 0?
-    # 21: 44?
+    # 21: 44 << version?
     # 22: 0?
     # 23: seasonal event string[]?
     # 24: ?
